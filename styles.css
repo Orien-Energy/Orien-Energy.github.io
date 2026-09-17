@@ -206,7 +206,7 @@ main {
     align-content: center;
     height: 25ch;
     padding: 1ch;
-    box-shadow: 0px -2px 4px rgba(18, 10, 4, 0.281);
+    box-shadow: 0px 0px 4px rgba(18, 10, 4, 0.281);
 }
 
 .applicationscontainer p {
