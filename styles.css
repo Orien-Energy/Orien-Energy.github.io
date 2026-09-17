@@ -1,0 +1,405 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(255, 251, 246);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+section {
+    padding-bottom: 1ch;
+}
+
+.hamburgerbutton {
+    height: 5ch;
+    width: 5ch;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid rgb(18, 10, 4); */
+    transition: 0.3s;
+}
+
+.hamburgerbutton:hover {
+    background-color: rgb(237, 230, 222);
+}
+
+.hblinecontainer {
+    width: 60%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hbline {
+    height: 3px;
+    border-radius: 3px;
+    background-color: rgb(18, 10, 4);
+}
+
+.expand-menu {
+    display: none;
+}
+
+.topleftlink {
+    display: flex;
+    align-items: center;
+    transition: 0.3s filter;
+}
+
+.topleftlink img {
+    height: 5ch;
+    transition: 0.3s;
+}
+
+.topleftlink:hover img {
+    filter: opacity(0.7);
+}
+
+.topleftlink a {
+    text-decoration: none;
+    color: rgb(18, 10, 4);
+    font-weight: 600;
+}
+
+.toprightlinks a {
+    color: rgb(18, 10, 4);
+    font-size: large;
+    animation: fadeIn 3s;
+    transition: 0.3s color;
+}
+
+.toprightlinks a:hover {
+    color: rgb(146, 112, 87);
+}
+
+.navbarspacer {
+    height: 7ch;
+}
+
+a {
+    color: cadetblue;
+    animation: fadeIn 3s;
+    transition: 0.3s color;
+}
+
+a:hover {
+    color: rgb(27, 66, 67);
+}
+
+.topnav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    height: 7ch;
+    background-color: rgb(255, 251, 246);
+    padding: 1ch;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10ch;
+    padding-right: 10ch;
+    box-shadow: 0px 2px 4px rgba(18, 10, 4, 0.281);
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 6ch;
+    text-align: center;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 5ch;
+    scroll-margin-top: 4ch;
+    scroll-snap-margin-top: 7ch;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 3ch;
+    text-align: center;
+    margin-bottom: 3px;
+}
+
+.missionstatement {
+    font-size: 4ch;
+    text-align: left;
+}
+
+p {
+    color: rgb(18, 10, 4);
+    font-size: large;
+}
+
+li {
+    font-size: large;
+}
+
+main {
+    max-width: 100ch;
+    padding: 2ch;
+    margin: auto;
+}
+
+.navlinks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.techdesccontainer {
+    width: 35ch;
+    margin: auto;
+    border-radius: 15px;
+    padding: 1ch;
+    box-shadow: 0px 0px 5px rgba(18, 10, 4, 0.281);
+}
+
+.techdesc {
+    text-align: center;
+    margin: auto;
+}
+
+.techdownarrow {
+    font-size: 5ch;
+    text-align: center;
+    margin: 0px;
+}
+
+.techhighlight {
+    font-size: 2.5ch;
+    font-weight: bold;
+    margin-top: 0px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1px;
+}
+
+
+.applicationscontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+    width: 80%;
+    margin: auto;
+}
+
+.applicationscontainer div {
+    background-color: rgb(33, 57, 57);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    display: flex;
+    align-content: center;
+    height: 25ch;
+    padding: 1ch;
+    box-shadow: 0px -2px 4px rgba(18, 10, 4, 0.281);
+}
+
+.applicationscontainer p {
+    margin: auto;
+    color: white;
+    text-align: center;
+}
+
+.imagecontainer {
+    display: flex;
+    justify-content: center;
+}
+
+.schematicimg {
+    width: 70%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px rgb(129, 114, 101);
+}
+
+
+.teamimage {
+    height: 300px;
+    background-color: rgb(1, 45, 45);
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px rgb(129, 114, 101);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    margin: auto;
+}
+
+.teamimage p {
+    color: white;
+}
+
+.sponsorimgs {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 80ch;
+    margin: auto;
+}
+
+.sponsorimgs img {
+    max-height: 60px;
+}
+
+
+.logobottomnav {
+    height: 4ch;
+}
+
+.logoandaddress p {
+    margin: 0px;
+    margin-left: 10px;
+    color: rgb(255, 251, 246);
+    font-size: small;
+}
+
+.bottomnavbar {
+    background-color: rgb(129, 114, 101);
+    box-shadow: 0px -2px 4px rgba(18, 10, 4, 0.281);
+    padding: 5px;
+}
+
+.bottomnav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 100ch;
+    margin: auto;
+}
+
+.bottomnavlinks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+.bottomnavlinks a {
+    font-size: small;
+    color: rgb(255, 251, 246)
+}
+
+.bottomnavlinkscontainer {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+.copyright {
+    color: rgb(255, 251, 246);
+    width: 100%;
+    text-align: right;
+}
+
+@media screen and (max-width: 768px) {
+    /* make it compatible with mobile and thin window
+     */
+
+    .schematicimg {
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: 0px 0px 5px rgb(129, 114, 101);
+    }
+
+    .applicationscontainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1em;
+        width: 100%;
+        margin: auto;
+    }
+
+    .navlinks {
+        display: grid;
+        row-gap: 2ch;
+        padding: 1ch;
+        background-color: rgb(237, 230, 222);
+    }
+
+    .navlinks a {
+        display: block;
+        text-align: right;
+    }
+
+
+    .topnav {
+        position: fixed;
+        height: 7ch;
+        background-color: rgb(255, 251, 246);
+        padding: 1ch;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 2ch;
+        padding-right: 2ch;
+        gap: 5rem;
+        box-shadow: 0px 2px 4px rgba(18, 10, 4, 0.281);
+    }
+
+    .topleftlink {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .expand-menu {
+        display: flex;
+    }
+
+    .navlinksholder {
+        position: absolute;
+        overflow: hidden;
+        transform: translate(-69px);
+        height: 0px;
+        transition: 0.3s;
+    }
+
+    .navlinks {
+        position: relative;
+        opacity: 1;
+        overflow: hidden;
+        transform: translate(0px, -100%);
+        transition-delay: 1s;
+        transition-property: height;
+        transition: 0.3s;
+    }
+
+    .toprightlinks:hover .navlinksholder {
+        height: auto;
+        border-top: 2px solid rgb(129, 114, 101);
+    }
+
+    .toprightlinks:hover .navlinks {
+        transform: translate(0px, 0px);
+    }
+
+    .toprightlinks:has(a:focus) .navlinksholder{
+        height: auto;
+        border-top: 2px solid rgb(129, 114, 101);
+    }
+
+    .toprightlinks:has(a:focus) .navlinks{
+        transform: translate(0px, 0px);
+    }
+
+    .teamimage {
+        width: 100%;
+    }
+}
