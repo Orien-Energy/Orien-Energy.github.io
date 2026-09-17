@@ -118,7 +118,7 @@ h2 {
     font-weight: 600;
     font-size: 5ch;
     scroll-margin-top: 4ch;
-    scroll-snap-margin-top: 7ch;
+    scroll-snap-margin-top: 4ch;
     text-align: center;
     margin-bottom: 5px;
 }
@@ -389,12 +389,12 @@ main {
         transform: translate(0px, 0px);
     }
 
-    .toprightlinks:has(a:focus) .navlinksholder{
+    .toprightlinks:has(a:focus) .navlinksholder {
         height: auto;
         border-top: 2px solid rgb(129, 114, 101);
     }
 
-    .toprightlinks:has(a:focus) .navlinks{
+    .toprightlinks:has(a:focus) .navlinks {
         transform: translate(0px, 0px);
     }
 
@@ -408,6 +408,8 @@ main {
 
     h2 {
         font-size: 3ch;
+        scroll-margin-top: 6ch;
+        scroll-snap-margin-top: 6ch;
     }
 
     h3 {
@@ -431,6 +433,6 @@ main {
     }
 
     .topleftlink img {
-    height: 3.5ch;
-}
+        height: 3.5ch;
+    }
 }
