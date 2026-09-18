@@ -424,6 +424,15 @@ main {
         display: block;
     }
 
+    .logoandaddress div {
+        width:fit-content;
+        margin: auto;
+    }
+
+    .logoandaddress p {
+        text-align: center;
+    }
+
     .bottomnavlinkscontainer {
         margin: 0px;
     }
