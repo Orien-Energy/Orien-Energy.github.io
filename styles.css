@@ -312,6 +312,51 @@ main {
     text-align: right;
 }
 
+.formcontainer {
+    width:fit-content;
+    margin: auto;
+}
+
+form {
+    display: inline-block;
+    padding: 1em;
+    border: 1px solid #cccccc;
+    border-radius: 1em;
+}
+
+label {
+    display: inline-block;
+    min-width: 90px;
+    text-align: right;
+}
+
+input, textarea {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 300px;
+    box-sizing: border-box;
+    border: 1px solid #999999;
+}
+
+input:focus, textarea:focus {
+    outline-style: solid;
+    outline-color: black;
+}
+
+button {
+    font-size:larger;
+    color: beige;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(129, 114, 101);
+    border-radius: 5px;
+    /* margin: auto; */
+    /* margin-left: 0.5em; */
+}
+
+.buttoncontainer {
+    width: fit-content;
+    margin: auto;
+}
+
 @media screen and (max-width: 768px) {
     /* make it compatible with mobile and thin window
      */
