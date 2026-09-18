@@ -28,6 +28,10 @@ section {
     background-color: rgb(237, 230, 222);
 }
 
+.toprightlinks:has(:focus) .hamburgerbutton {
+    background-color: rgb(237, 230, 222);
+}
+
 .hblinecontainer {
     width: 60%;
     height: 50%;
@@ -389,14 +393,14 @@ main {
         transform: translate(0px, 0px);
     }
 
-    .toprightlinks:has(a:focus) .navlinksholder {
+    .toprightlinks:has(:focus) .navlinksholder {
         height: auto;
         border-top: 2px solid rgb(129, 114, 101);
     }
 
-    .toprightlinks:has(a:focus) .navlinks {
+    .toprightlinks:has(:focus) .navlinks {
         transform: translate(0px, 0px);
-    }
+    }       
 
     .teamimage {
         width: 100%;
@@ -421,15 +425,15 @@ main {
     }
 
     .bottomnavlinkscontainer {
-        margin-left: 10px;
+        margin: 0px;
     }
 
     .bottomnavlinks {
-        float: left;
+        margin: auto;
     }
 
     .copyright {
-        text-align: left;
+        text-align: center;
     }
 
     .topleftlink img {
