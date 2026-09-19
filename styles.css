@@ -192,7 +192,6 @@ main {
     margin-bottom: 1px;
 }
 
-
 .applicationscontainer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -253,6 +252,7 @@ main {
     justify-content: center;
     max-width: 80ch;
     margin: auto;
+    gap: 5px;
 }
 
 .sponsorimgs img {
@@ -288,11 +288,11 @@ main {
 .bottomnavlinks {
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-end;
     gap: 1rem;
     list-style: none;
     margin: 0;
     padding: 0;
-    float: right;
 }
 
 .bottomnavlinks a {
@@ -308,12 +308,13 @@ main {
 
 .copyright {
     color: rgb(255, 251, 246);
+    font-size: small;
     width: 100%;
     text-align: right;
 }
 
 .formcontainer {
-    width:fit-content;
+    width: fit-content;
     margin: auto;
 }
 
@@ -330,20 +331,22 @@ label {
     text-align: right;
 }
 
-input, textarea {
+input,
+textarea {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: 300px;
     box-sizing: border-box;
     border: 1px solid #999999;
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
     outline-style: solid;
     outline-color: black;
 }
 
 button {
-    font-size:larger;
+    font-size: larger;
     color: beige;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: rgb(129, 114, 101);
@@ -355,6 +358,26 @@ button {
 .buttoncontainer {
     width: fit-content;
     margin: auto;
+}
+
+.linkedinicon {
+    width: 30px;
+    filter: invert() grayscale() brightness(200%) opacity(70%);
+    transition: 0.3s;
+}
+
+.linkediniconcontainer {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.grouppics {
+    text-align: center;
+}
+
+.grouppics img {
+    width: 60%;
+    border-radius: 10px;
 }
 
 @media screen and (max-width: 768px) {
@@ -445,7 +468,7 @@ button {
 
     .toprightlinks:has(:focus) .navlinks {
         transform: translate(0px, 0px);
-    }       
+    }
 
     .teamimage {
         width: 100%;
@@ -470,12 +493,13 @@ button {
     }
 
     .logoandaddress div {
-        width:fit-content;
+        width: fit-content;
         margin: auto;
     }
 
     .logoandaddress p {
         text-align: center;
+        margin-left: 0px;
     }
 
     .bottomnavlinkscontainer {
@@ -492,5 +516,19 @@ button {
 
     .topleftlink img {
         height: 3.5ch;
+    }
+
+    .linkediniconcontainer {
+        margin-left: 0px;
+        padding-top: 10px;
+    }
+
+    .grouppics {
+        display: block;
+    }
+
+    .grouppics img {
+        width: 80%;
+        height: auto;
     }
 }
