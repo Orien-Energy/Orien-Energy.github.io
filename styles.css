@@ -116,6 +116,7 @@ h1 {
     font-weight: 600;
     font-size: 5ch;
     max-width: 30ch;
+    color: white;
 }
 
 h2 {
@@ -151,6 +152,7 @@ h3 {
     font-size: large;
     text-align: left;
     max-width: 60ch;
+    color: white;
 }
 
 p {
