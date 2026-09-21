@@ -83,11 +83,11 @@ section {
 }
 
 .navbarspacer {
-    height: 7ch;
+    height: 5ch;
 }
 
 a {
-    color: cadetblue;
+    color: rgb(65, 123, 125);
     animation: fadeIn 3s;
     transition: 0.3s color;
 }
@@ -113,9 +113,9 @@ a:hover {
 }
 
 h1 {
-    font-weight: 500;
-    font-size: 6ch;
-    text-align: center;
+    font-weight: 600;
+    font-size: 5ch;
+    max-width: 30ch;
 }
 
 h2 {
@@ -134,9 +134,23 @@ h3 {
     margin-bottom: 3px;
 }
 
+.heading {
+    background-size: cover;
+    padding: 10ch;
+    padding-top: 25ch;
+    color: white;
+}
+
+.headingtextcontainer {
+    max-width: 100ch;
+    margin: auto;
+}
+
 .missionstatement {
-    font-size: 4ch;
+    font-weight: 500;
+    font-size: large;
     text-align: left;
+    max-width: 60ch;
 }
 
 p {
@@ -149,6 +163,10 @@ li {
 }
 
 main {
+    
+}
+
+.mainbodytext {
     max-width: 100ch;
     padding: 2ch;
     margin: auto;
@@ -267,12 +285,11 @@ main {
 .logoandaddress p {
     margin: 0px;
     margin-left: 10px;
-    color: rgb(255, 251, 246);
     font-size: small;
 }
 
 .bottomnavbar {
-    background-color: rgb(129, 114, 101);
+    /* background-color: rgb(129, 114, 101); */
     box-shadow: 0px -2px 4px rgba(18, 10, 4, 0.281);
     padding: 5px;
 }
@@ -297,7 +314,6 @@ main {
 
 .bottomnavlinks a {
     font-size: small;
-    color: rgb(255, 251, 246)
 }
 
 .bottomnavlinkscontainer {
@@ -307,7 +323,6 @@ main {
 }
 
 .copyright {
-    color: rgb(255, 251, 246);
     font-size: small;
     width: 100%;
     text-align: right;
@@ -362,7 +377,7 @@ button {
 
 .linkedinicon {
     width: 30px;
-    filter: invert() grayscale() brightness(200%) opacity(70%);
+    filter: grayscale();
     transition: 0.3s;
 }
 
@@ -474,12 +489,18 @@ button {
         width: 100%;
     }
 
-    .missionstatement {
-        font-size: 3ch;
+    .heading {
+        padding: 2ch;
+        padding-top: 20ch;
+        padding-bottom: 10ch;
+    }
+
+    h1 {
+        font-size: 4.5ch;
     }
 
     h2 {
-        font-size: 3ch;
+        font-size: 4ch;
         scroll-margin-top: 6ch;
         scroll-snap-margin-top: 6ch;
     }
