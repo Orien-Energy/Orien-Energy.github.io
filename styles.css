@@ -4,7 +4,7 @@ html {
 
 body {
     background-color: rgb(255, 251, 246);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     padding: 0px;
     margin: 0px;
 }
@@ -48,6 +48,10 @@ section {
 
 .expand-menu {
     display: none;
+    padding: 0px;
+    border: none;
+    background-color: transparent;
+    border: none;
 }
 
 .topleftlink {
@@ -113,6 +117,7 @@ a:hover {
 }
 
 h1 {
+    font-family: monospace, 'Courier New', Courier;
     font-weight: 600;
     font-size: 5ch;
     max-width: 30ch;
@@ -120,19 +125,23 @@ h1 {
 }
 
 h2 {
+    font-family: monospace, 'Courier New', Courier;
     font-weight: 600;
     font-size: 5ch;
     scroll-margin-top: 4ch;
     scroll-snap-margin-top: 4ch;
     text-align: center;
     margin-bottom: 5px;
+    margin-top: 2em;
 }
 
 h3 {
+    font-family: monospace, 'Courier New', Courier;
     font-weight: 400;
     font-size: 3ch;
     text-align: center;
     margin-bottom: 3px;
+    margin-top: 2em;
 }
 
 .heading {
@@ -215,7 +224,7 @@ main {
 .applicationscontainer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 1em;
+    gap: 1.5em;
     width: 80%;
     margin: auto;
 }
@@ -241,6 +250,7 @@ main {
 .imagecontainer {
     display: flex;
     justify-content: center;
+    margin-top: 3em;
 }
 
 .schematicimg {
@@ -362,16 +372,6 @@ textarea:focus {
     outline-color: black;
 }
 
-button {
-    font-size: larger;
-    color: beige;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: rgb(129, 114, 101);
-    border-radius: 5px;
-    /* margin: auto; */
-    /* margin-left: 0.5em; */
-}
-
 .buttoncontainer {
     width: fit-content;
     margin: auto;
@@ -410,7 +410,6 @@ button {
     .applicationscontainer {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 1em;
         width: 100%;
         margin: auto;
     }
