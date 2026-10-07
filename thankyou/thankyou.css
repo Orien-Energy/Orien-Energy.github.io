@@ -1,0 +1,31 @@
+h2 {
+    font-family: monospace, 'Courier New', Courier;
+    font-weight: 600;
+    font-size: 5ch;
+    scroll-margin-top: 4ch;
+    scroll-snap-margin-top: 4ch;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 2em;
+}
+
+
+body {
+    background-color: rgb(255, 251, 246);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+p {
+    color: rgb(18, 10, 4);
+    font-size: large;
+}
+
+a {
+    color: #D47844;
+}
+
+a:hover {
+    color: #DFA07B;
+}

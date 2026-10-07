@@ -7,52 +7,53 @@
     <title>Orien Energy</title>
 
     <link rel="stylesheet" href="styles.css">
-
+    <script src="https://static.form-data.com/js/form-data-tools.v1.min.js"></script>
 </head>
 
 <body>
-    <header>
-        <nav class="topnav">
-            <div class="topleftlink">
-                <a href="">
-                    <img src="images/logos/logo.png" alt="Orien Energy Logo">
-                </a>
-            </div>
+    <header class="topnav">
+        <div class="topleftlink">
+            <a href="">
+                <img src="images/logos/logo.png" alt="Orien Energy Logo">
+            </a>
+        </div>
 
 
-            <div class="toprightlinks">
-                <button class="expand-menu" tabindex="0">
-                    <div class="hamburgerbutton">
-                        <div class="hblinecontainer">
-                            <div class="hbline">
-                            </div>
-                            <div class="hbline">
-                            </div>
-                            <div class="hbline">
-                            </div>
+        <div class="toprightlinks">
+            <button class="expand-menu" id="expand-menu-button" tabindex="0" aria-expanded="false">
+                <div class="hamburgerbutton" id="hamburgerbutton">
+                    Menu
+                    <div class="hblinecontainer">
+                        <div class="hbline">
+                        </div>
+                        <div class="hbline">
+                        </div>
+                        <div class="hbline">
                         </div>
                     </div>
-                </button>
-
-                <div class="navlinksholder">
-                    <ul class="navlinks">
-                        <li>
-                            <a href="">Home</a>
-                        </li>
-                        <li>
-                            <a href="#technology">Technology</a>
-                        </li>
-                        <li>
-                            <a href="#applications">Markets</a>
-                        </li>
-                        <li>
-                            <a href="#team">Team</a>
-                        </li>
-                    </ul>
                 </div>
+            </button>
 
-            </div>
-        </nav>
+            <nav class="navlinksholder" id="navlinksholder" aria-label="Main">
+                <ul class="navlinks" id="navlinks">
+                    <li>
+                        <a href="">Home</a>
+                    </li>
+                    <li>
+                        <a href="#technology">Technology</a>
+                    </li>
+                    <li>
+                        <a href="#applications">Markets</a>
+                    </li>
+                    <li>
+                        <a href="#team">Team</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
@@ -180,10 +181,6 @@
                     <img src="images/sponsors/ventureforclimatetech.png" alt="">
                 </div>
 
-                <h3>
-                    Contact
-                </h3>
-
                 <p></p>
 
                 <!-- <div class="formcontainer">
@@ -213,16 +210,52 @@
                 </form>
             </div> -->
 
-                <p style="text-align: center;">
-                    Message us through our <a href="https://www.linkedin.com/company/orien-energy/">LinkedIn</a> page.
-                </p>
+
+                <div class="formcontainer" >
+                    <form action="https://api.form-data.com/f/WUcjWqN4g53kKi" method="post">
+
+                        <h2 id="contact">
+                            Contact Us
+                        </h2>
+
+                        <p>
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required />
+                        </p>
+
+                        <p>
+                            <label for="mail">Email</label>
+                            <input type="email" id="mail" name="email" required />
+                        </p>
+
+                        <p>
+                            <label for="msg">Message</label>
+                            <textarea id="msg" name="message"></textarea>
+                        </p>
+
+                        <input type="hidden" name="_fd" value="0" class="form-data-marker" />
+                        <input type="text" name="xx_password" style="display:none !important" tabindex="-1"
+                            autocomplete="off">
+
+                        <div class="buttoncontainer">
+                            <p class="button">
+                                <button class="submitbtn" type="submit">Submit</button>
+                            </p>
+                        </div>
+                    </form>
+
+                    <script>
+                        _fd.scan()
+                    </script>
+                </div>
+
             </section>
 
         </div>
     </main>
 
     <footer>
-        <nav class="bottomnavbar">
+        <div class="bottomnavbar">
             <div class="bottomnav">
                 <div class="logoandaddress">
                     <div>
@@ -248,20 +281,25 @@
                 </div>
 
                 <div class="bottomnavlinkscontainer">
-                    <ul class="bottomnavlinks">
-                        <li>
-                            <a href="">Top</a>
-                        </li>
-                        <li>
-                            <a href="#technology">Technology</a>
-                        </li>
-                        <li>
-                            <a href="#applications">Markets</a>
-                        </li>
-                        <li>
-                            <a href="#team">Team</a>
-                        </li>
-                    </ul>
+                    <nav style="width: fit-content; margin: auto;">
+                        <ul class="bottomnavlinks">
+                            <li>
+                                <a href="">Top</a>
+                            </li>
+                            <li>
+                                <a href="#technology">Technology</a>
+                            </li>
+                            <li>
+                                <a href="#applications">Markets</a>
+                            </li>
+                            <li>
+                                <a href="#team">Team</a>
+                            </li>
+                            <li>
+                                <a href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
 
                     <div>
                         <p class="copyright">
@@ -271,9 +309,10 @@
 
                 </div>
             </div>
-        </nav>
+        </div>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 
 </html>
